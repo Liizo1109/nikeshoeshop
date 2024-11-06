@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block content %}
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; background-color: #f7f7f7; text-align: center;">
+<div class="header-fixed">
+    <div class="header-left">
+        <a href="{{ url_for('your_register.register') }}" class="search-btn" role="button">Sign Up</a>
+    </div>
+    <div class="header-right">
+        <a href="{{ url_for('index') }}" class="search-btn" role="button">Home</a>
+    </div>
+</div>
+
+<div class="container-grid">
+    <div class="divsearch-text">
+        <p class="search-text">Please log in to continue</p>
+    </div>
+    <div class="form-container">
+        <form action="{{ url_for('your_login.login') }}" method="POST" class="login-form">
+            <div class="form-group">
+                <input type="text" name="username" id="username" placeholder="Enter username" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+            </div>
+            <br>
+            <button type="submit" class="search-btn">Login</button>
+        </form>
+    </div>
+</div>
+</body>
+{% endblock %}

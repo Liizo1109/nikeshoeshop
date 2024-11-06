@@ -1,0 +1,92 @@
+/* Reset một số style mặc định */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* Style cho header cố định */
+.header-fixed {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style cho nút trong header */
+.header-fixed .search-btn {
+    background: linear-gradient(45deg, #007BFF, #9C27B0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+/* Style cho container chính và căn giữa nội dung */
+.container-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Căn giữa theo chiều dọc */
+    padding-top: 60px; /* Để tránh chồng chéo với header */
+}
+
+/* Style cho form */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Đặt chiều rộng cố định cho form */
+    text-align: center;
+}
+
+/* Style cho các nhóm trong form */
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Style cho ô input */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #111;
+}
+
+/* Style cho nút submit */
+button[type="submit"] {
+    background: linear-gradient(45deg, #007BFF, #9C27B0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+    width: 100%; /* Đảm bảo nút rộng bằng form */
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style cho tiêu đề "Please log in" */
+.divsearch-text .search-text {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 20px;
+}

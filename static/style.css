@@ -1,0 +1,387 @@
+body {
+    color: #fff;
+    /* background-image: url(/static/img/pexels-hamza-nouasria-12628402.jpg); */
+    background-position: center;
+    background-size: cover;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins' ,sans-serif;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand >a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: #111111;
+    font-weight: 600;
+}
+::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn {
+    padding: 0 24px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: none;
+    border-radius: 32px;
+    color: #fff;
+}
+.search >a {
+    color: #fff;
+}
+#ico-search {
+    margin-right: 4px;
+    padding: 2px;
+
+}
+
+/* .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 2px;
+    background-image: url(/static/img/pexels-hamza-nouasria-12628402.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.7);
+    display: block;
+} */
+.container-card {
+    width: 100%;
+    position: absolute;
+    top: 43%;
+
+}
+.container-card p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 325px;
+    height: 580px;
+    background-image: url('http://i.imgur.com/nwmywCl.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.15);
+    .shoes {
+      position: absolute;
+      width: 400px;
+      left: -55px;
+      top: 85px;
+    }
+    .logo {
+      position: absolute;
+      right: 15px;
+      top: 0px;
+      width: 55px;
+    }
+  }
+
+input[name="searchInput"] {
+    padding: 8px;
+    border: none;
+    border-radius: 32px;
+    width: 321px;
+    background-color: #bababa;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 325px;
+    height: 580px;
+    background-image: url('http://i.imgur.com/nwmywCl.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.15);
+    .shoes {
+      position: absolute;
+      width: 400px;
+      left: -55px;
+      top: 85px;
+    }
+    .logo {
+      position: absolute;
+      right: 15px;
+      top: 0px;
+      width: 55px;
+    }
+  }
+  .cardTwo {
+    z-index: -1;
+    background: #ffffff;
+    height: 525px;
+    width: 500px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 32px 40px;
+    position: relative;
+    h1.shoe-title {
+      color: black;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+    .price-listing {
+      display: flex;
+      align-items: center;
+      height: 20px;
+    }
+    .price {
+      font-size: 1.5rem;
+      margin-right: 16px;
+    }
+    .oldPrice {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 1rem;
+    }
+    p.shoe-detail {
+      color: #5f6668;
+      line-height: 1.5;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    p.label {
+      color: #5f6668;
+      font-size: 1.25rem;
+      margin: 0;
+      width: 125px;
+    }
+    .size {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin-right: 24px;
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+        .selected {
+          color: white;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            background: black;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    z-index: 100;
+    &:hover {
+        .hollow {
+        background: black;
+          color: white;
+        }
+     }
+    button {
+      padding: 16px 24px;
+      margin-right: 24px;
+      border-radius: 50px;
+      flex: 1;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: Lato;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+  }
+  .hollow {
+      background: transparent;
+      border: 3px solid black;
+      color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+  .primary {
+    background: black;
+    color: white;
+    border: 3px solid black;
+  }
+
+
+
+#apple,
+#facebook,
+#twitter,
+#github {
+    font-size: 1rem;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000000, 10px 1px 12px #000000,
+    20px 2px 10px #000000, 2px 2px 3px #000000,
+    inset 2px 2px 10px #000000,
+    inset 2px 2px 10px #000000,
+    inset 2px 2px 10px #000000;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 10px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff,
+     0 0 100px #0072ff,
+     0 0 150px #0072ff,
+     0 0 200px #0072ff;
+}
+#twitter {
+    animation-delay: 0.3s;
+
+}
+#facebook {
+    animation-delay: 0.1s;
+}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+.container-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Căn giữa theo chiều dọc */
+    padding-top: 30px; /* Để tránh chồng chéo với header */
+}
+
+/* Style cho form */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Đặt chiều rộng cố định cho form */
+    text-align: center;
+}
+
+/* Style cho các nhóm trong form */
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Style cho ô input */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #111;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #111;
+}
+/* Style cho tiêu đề "Please log in" */
+.divsearch-text .search-text {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 20px;
+}
+/* Style cho header cố định */
+.header-fixed {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style cho nút trong header */
+.header-fixed .search-btn {
+    background: linear-gradient(45deg, #007BFF, #9C27B0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 32px;
+}

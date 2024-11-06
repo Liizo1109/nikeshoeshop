@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}View product{% endblock %}
+
+{% block content %}
+<body>
+    <div class="header-fixed">
+        <form action="/viewcart" method="POST">
+            <button type="submit" class="search-btn">
+                View Cart
+            </button>
+        </form>
+        <div class="header-src">
+            <form method="POST" action="/searchData">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Enter your search term">
+                <button type="submit" class="search-btn" role="button">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-grid">
+        <div class="divsearch-text">
+            <p class="search-text" style="color: #111111">
+                {% if search_text %}
+                You searched for: {{ search_text }}
+                {% endif %}
+            </p>
+        </div>
+        <div class="product-grid">
+            {% if table %}
+                {% for row in table %}
+                <div class="product-item">
+                    <h2>{{ row[1] }}</h2>
+                    <img src="{{ row[7] }}" alt="{{ row[1] }}" width="150">
+                    <p>{{ row[8] }}</p>
+
+                    <!-- Input số lượng và nút Add to cart với sự kiện gọi hàm addToCart -->
+                    <input type="number" id="quantity-{{ row[0] }}" value="1" min="1">
+                    <button onclick="addToCart('{{ row[0] }}')" class="search-btn">Add to cart</button>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>No products found for your search.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Script chính -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+{% endblock %}

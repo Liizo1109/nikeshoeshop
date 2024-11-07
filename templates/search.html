@@ -37,6 +37,7 @@
                     <p style="color: #000;">Rating: {{ row[3] }} <span style="color: gold;">&#9733;</span></p>
 
                     <!-- Nút Add to cart -->
+                    <input type="number" id="quantity-{{ row[0] }}" value="1" min="1">
                     <button onclick="addToCart('{{ row[0] }}')" class="search-btn">Add to cart</button>
                 </div>
                 {% endfor %}

@@ -32,8 +32,11 @@
                     <img src="{{ row[7] }}" alt="{{ row[1] }}" width="150">
                     <p>{{ row[8] }}</p>
 
-                    <!-- Input số lượng và nút Add to cart với sự kiện gọi hàm addToCart -->
-                    <input type="number" id="quantity-{{ row[0] }}" value="1" min="1">
+                    <!-- Hiển thị giá và đánh giá với màu chữ đen và ngôi sao màu vàng -->
+                    <p style="color: #000;">Price: {{ row[5] }}</p>
+                    <p style="color: #000;">Rating: {{ row[3] }} <span style="color: gold;">&#9733;</span></p>
+
+                    <!-- Nút Add to cart -->
                     <button onclick="addToCart('{{ row[0] }}')" class="search-btn">Add to cart</button>
                 </div>
                 {% endfor %}

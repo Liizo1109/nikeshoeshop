@@ -1,53 +1,9 @@
-{% extends 'base.html' %}
-{% block title %}Home{% endblock %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="0; url=base.html">
+</head>
 <body>
-   <div class="container-card">
-    <!-- card -->
-    <p style="color: #111111">Find your shoe model !</p>
-    <div class="search">
-      <form method="POST" action="/searchData">
-        <input type="text" name="searchInput" placeholder="Search...">
-        <a href=""><i class="fa fa-search" id="ico-search"></i></a>
-        <button class="search-btn" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-
-  <footer>
-    <!-- place footer here -->
-    <div class="product-grid">
-      {% for row in table %}
-      <div class="product-item">
-        <h2>{{ row[1] }}</h2>
-        <img src="{{ row[7] }}" alt="{{ row[7] }}">
-
-        <!-- Giá sản phẩm -->
-        <p>Price: ${{ row[6] }}</p>
-
-        <!-- Đánh giá sản phẩm -->
-        <p>Rating: {{ row[4] }} <i class="fa fa-star" style="color: gold;"></i></p>
-
-        <form method="POST">
-          <input type="hidden" name="product_id" value="{{ row[0] }}">
-          <button type="submit">Add to cart</button>
-        </form>
-      </div>
-      {% endfor %}
-    </div>
-  </footer>
-
-  <!-- Bootstrap JavaScript Libraries -->
-  <script>
-    var bouncingShoes = anime({
-      targets: '#shoe-target',
-      translateY: '15',
-      duration: 2000,
-      loop: true,
-      direction: 'alternate',
-      easing: 'linear'
-    });
-  </script>
+    <p>Nếu bạn không được chuyển hướng tự động, hãy <a href="base.html">nhấn vào đây</a>.</p>
 </body>
-{% endblock %}
+</html>

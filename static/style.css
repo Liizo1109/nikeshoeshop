@@ -15,6 +15,22 @@ body {
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
+    background-color: #f7f7f7;
+}
+.header p {
+
+    color: #111111;
+    padding: 10px;
+    margin: 0;
+}
+
+.header p a {
+    color: #111111;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+
 }
 .navbar-brand {
     display: flex;
@@ -31,6 +47,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     padding-left: 10px;
+    color: black;
 }
 .search {
     display: flex;
@@ -384,4 +401,26 @@ footer {
     cursor: pointer;
     text-decoration: none;
     border-radius: 32px;
+}
+.flash-messages {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.flash {
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.flash-success {
+    background-color: #4CAF50;
+}
+
+.flash-error {
+    background-color: #f44336;
 }
